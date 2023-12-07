@@ -1,3 +1,4 @@
+
 pipeline{
     agent {
         node {
@@ -25,10 +26,7 @@ pipeline{
                     sh "${scannerHome}/bin/sonar-scanner"
                 echo '<--------------- Sonar Analysis stopped  --------------->'
                 }    
-            
+           } 
     }
-
 }
-
-    
-  
+}
